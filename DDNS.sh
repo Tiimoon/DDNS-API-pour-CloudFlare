@@ -17,11 +17,11 @@ then
     rm -R ddclient-3.9.0
     cd /etc/ddclient/
     sudo rm ./ddclient.conf
-    read -p " Saisir le temp en seconde de mise à jour de l'ip ex : 300 (pour 5mins) " Temp
-    read -p " Saisir l'email lié au compte CloudFlare " Email
-    read -p " Saisir la clé API globale de votre compte CloudFlare " CleApi
-    read -p " Saisir le nom de domaine que vous possédé ex: google.com " Domaine
-    read -p " Saisir l'enregistrement à mettre à jour ex: mail.google.com " SubDomaine
+    read -p " Saisir le temp en seconde de mise à jour de l'ip ex : 300 (pour 5mins) : " Temp
+    read -p " Saisir l'email lié au compte CloudFlare : " Email
+    read -p " Saisir la clé API globale de votre compte CloudFlare : " CleApi
+    read -p " Saisir le nom de domaine que vous possédé ex: google.com : " Domaine
+    read -p " Saisir l'enregistrement à mettre à jour ex: mail.google.com : " SubDomaine
     echo "daemon=$Temp" >> ddclient.conf
     echo "ssl=yes" >> ddclient.conf
     echo "protocol=cloudflare" >> ddclient.conf
